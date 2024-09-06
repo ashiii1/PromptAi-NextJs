@@ -403,9 +403,10 @@ export default function Home() {
     return React.createElement('div', { className: "grid grid-cols-2 gap-4 mb-8 max-w-lg mx-auto" },
       promptBoxes.map((box, index) => 
         React.createElement('button', {
+          //a
           key: index,
           onClick: () => handlePromptClick(box.text),
-          className: `bg-[#161616] hover:bg-[#2b2b2b] text-white p-3 rounded-lg flex flex-col items-center justify-center transition duration-300 h-24 ${selectedPrompt === box.text ? 'ring-2 ring-blue-500' : ''}`,
+          className: `bg-[#2c3539] hover:bg-[#2b2b2b] text-white p-3 rounded-lg flex flex-col items-center justify-center transition duration-300 h-24 ${selectedPrompt === box.text ? 'ring-2 ring-blue-500' : ''}`,
           disabled: isLoading
         }, [
           React.createElement('div', { className: "text-xl mb-2", key: 'icon' }, box.icon),
@@ -502,7 +503,7 @@ className={`w-12 h-12 ${isSpinning ? 'animate-spin' : ''}`}
   const renderSidebar = () => {
     return React.createElement('div', {
       ref: sidebarRef,
-      className: `fixed inset-y-0 left-0 z-30 w-64 bg-[#161616] p-4 flex flex-col transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`
+      className: `fixed inset-y-0 left-0 z-30 w-64 bg-[#045f5f] p-4 flex flex-col transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out`
     }, [
       React.createElement('button', {
         onClick: toggleSidebar,
