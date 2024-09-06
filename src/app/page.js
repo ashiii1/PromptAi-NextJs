@@ -427,8 +427,8 @@ className={`w-12 h-12 ${isSpinning ? 'animate-spin' : ''}`}
 >
 <defs>
   <linearGradient id="blueVioletGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" style={{ stopColor: '#0000FF', stopOpacity: 1 }} /> {/* Blue */}
-    <stop offset="100%" style={{ stopColor: '#8A2BE2', stopOpacity: 1 }} /> {/* Violet */}
+    <stop offset="0%" style={{ stopColor: '#007c80', stopOpacity: 1 }} /> {/* Blue */}
+    <stop offset="100%" style={{ stopColor: '#033e3e', stopOpacity: 1 }} /> {/* Violet */}
   </linearGradient>
 </defs>
 <g fill="url(#blueVioletGradient)">
@@ -573,7 +573,7 @@ className={`w-12 h-12 ${isSpinning ? 'animate-spin' : ''}`}
     ]),
 
     // Main content
-    React.createElement('div', { className: "flex-1 flex flex-col overflow-hidden bg-[#1e1e1e]", key: 'mainContent' }, [
+    React.createElement('div', { className: "flex-1 flex flex-col overflow-hidden bg-[#f0f0f0]", key: 'mainContent' }, [
       // Sidebar toggle button
       React.createElement('button', {
         onClick: toggleSidebar,
@@ -603,7 +603,7 @@ className={`w-12 h-12 ${isSpinning ? 'animate-spin' : ''}`}
       ),
 
       // Footer
-      React.createElement('footer', { className: "bg-[#1e1e1e] p-4", key: 'footer' },
+      React.createElement('footer', { className: "bg-[#033e3e] p-4", key: 'footer' },
         React.createElement('div', { className: "max-w-3xl mx-auto" }, [
           renderForm(),
           error && React.createElement('p', { className: "text-red-500 mt-2", key: 'error' }, t(error)),
